@@ -65,12 +65,12 @@ Array(200).fill().forEach(addStar);
 
 // Background
 
-const spaceTexture = new THREE.TextureLoader().load("space.jpg");
+const spaceTexture = new THREE.TextureLoader().load("/assets/space.jpg");
 scene.background = spaceTexture;
 
 // Avatar
 
-const myTexture = new THREE.TextureLoader().load("me.jpg");
+const myTexture = new THREE.TextureLoader().load("/assets/me.jpg");
 
 const me = new THREE.Mesh(
   new THREE.BoxGeometry(3, 3, 3),
@@ -81,8 +81,8 @@ scene.add(me);
 
 // Moon
 
-const moonTexture = new THREE.TextureLoader().load("moon.jpg");
-const normalTexture = new THREE.TextureLoader().load("normal.jpg");
+const moonTexture = new THREE.TextureLoader().load("/assets/moon.jpg");
+const normalTexture = new THREE.TextureLoader().load("/assets/normal.jpg");
 
 const moon = new THREE.Mesh(
   new THREE.SphereGeometry(3, 32, 32),
